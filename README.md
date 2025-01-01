@@ -2,7 +2,9 @@
 
 # Python Scraping Tech Profiles (generic)
 
-This Python script allows you to **scrape technology profiles** (mostly personal portfolio pages) to extract public information such as **skills**, **work experience**, and more. The project uses popular libraries like **Selenium**, **BeautifulSoup**, and **User-Agent Rotation** to explore web pages; dynamically interact with elements, and avoid being blocked by servers - **!!!** Internet is something almost alive so this script is not final. It should be refined and updated regularly. 
+This Python script allows you to **scrape technology profiles** (mostly personal portfolio pages) to extract public information such as **skills**, **work experience**, and more. The project uses popular libraries like **Selenium**, **BeautifulSoup**, and **User-Agent Rotation** to explore web pages; dynamically interact with elements, and avoid being blocked by servers -
+###!!!
+Internet is something almost alive so this script is not final. It should be refined and updated regularly. 
 
 ### Why this script?
 
