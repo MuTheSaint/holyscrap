@@ -31,7 +31,9 @@ import requests
 from bs4 import BeautifulSoup
 ```
 **requests** : Used to send HTTP requests. Allows you to send a GET request to DuckDuckGo to get the content of a web page.
+
 **BeautifulSoup** : From the bs4 library. Used to "parse" HTML content & extract specific information (like links, titles, etc.).
+
 ---------------------------------------------------
 **2.Main fonction**
 ```
@@ -39,6 +41,7 @@ def duckduckgo_search_portfolios(keyword, num_results=10):
 ```
 _duckduckgo_search_portfolios function takes two parameters_
 **keyword** : Keyword you want to search for on DuckDuckGo.
+
 **num_results** : Number of results to return (default is 10).
 
 ---------------------------------------------------
@@ -47,6 +50,7 @@ _duckduckgo_search_portfolios function takes two parameters_
 query = f"{keyword} site:dev OR site:io OR site:me"
 ```
 This line creates a query text string --> formatted search query for DuckDuckGo.
+
 The format site:dev OR site:io OR site:me means that the search will be limited to results from sites with the .dev, .io, or .me extensions. This is useful for targeting developer portfolios or online profiles that are on these popular domain types. in fact, you can adapt the code for any sector.
 
 ---------------------------------------------------
@@ -96,6 +100,7 @@ links = []
                 links.append(link)
 ```
 **soup.find_all('a', class_='result__a', href=True)** : Line searches for all <a> elements (links) in the page that have the CSS class result__a and an href attribute (which contains the URL of the link).
+
 **link = a['href']** : Gets the value of the href attribute (i.e. the URL) for each link.
 _If the URL is valid, it is added to the links list._
 
@@ -133,6 +138,7 @@ else:
     print("No profile found.")
 ```
 If profiles (links) are found --> displayed on the screen, one by one, with the prefix URL:.
+
 If no profiles are found --> the message "No profile found." is printed.
 
 ---------------------------------------------------
