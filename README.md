@@ -40,6 +40,7 @@ from bs4 import BeautifulSoup
 def duckduckgo_search_portfolios(keyword, num_results=10):
 ```
 _duckduckgo_search_portfolios function takes two parameters_
+
 **keyword** : Keyword you want to search for on DuckDuckGo.
 
 **num_results** : Number of results to return (default is 10).
@@ -102,6 +103,7 @@ links = []
 **soup.find_all('a', class_='result__a', href=True)** : Line searches for all <a> elements (links) in the page that have the CSS class result__a and an href attribute (which contains the URL of the link).
 
 **link = a['href']** : Gets the value of the href attribute (i.e. the URL) for each link.
+
 _If the URL is valid, it is added to the links list._
 
 ---------------------------------------------------
