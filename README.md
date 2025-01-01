@@ -131,7 +131,6 @@ if profiles:
         print(f"URL: {profile}")
 else:
     print("No profile found.")
-
 ```
 If profiles (links) are found --> displayed on the screen, one by one, with the prefix URL:.
 If no profiles are found --> the message "No profile found." is printed.
