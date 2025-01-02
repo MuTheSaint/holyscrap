@@ -111,7 +111,7 @@ _If the URL is valid, it is added to the links list._
 ---------------------------------------------------
 **10.Return the first results**
 ```
-        return links[:num_results]
+return links[:num_results]
 ```
 Once all the links are extracted, the function returns the first num_results links (the results are limited to a given number, by default 10).
 
